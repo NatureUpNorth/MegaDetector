@@ -34,7 +34,28 @@ if __name__ == '__main__':
                           output_dir=output_dir,
                           render_confidence_threshold=render_confidence_threshold,
                           crop_images=crop_images)
+
+
+
+#%% Interactive driver
+
+if False:
+
+    #%%
+    model_file = r'c:\temp\models\md_v4.1.0.pb'
+    input_dir = r"C:\\Users\\bkara\\Downloads\\input"
+    image_file_names = path_utils.find_images(r'c:\temp\demo_images\ssverymini')
+    output_dir = r'c:\temp\demo_images\ssverymini'
+    render_confidence_threshold = 0.8
+    crop_images = True
+
+    load_and_run_detector(model_file=model_file,
+                          input_dir = input_dir,
+                          image_file_names=image_file_names,
+                          output_dir=output_dir,
+                          render_confidence_threshold=render_confidence_threshold,
+                          crop_images=crop_images)
 ```
-This chunk can be found at around line 690 of the run_detector file.
+This chunk can be found at around line 763 of the run_detector file.
 
 Good Luck!
